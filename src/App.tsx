@@ -1,22 +1,11 @@
-// components
-import TaskCard from "./components/TaskCard"
+import TasksContainer from "./components/TasksContainer"
 
 function App() {
 
+
   return (
     <>
-    <div className="flex row gap-2 wrap">
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-      <TaskCard/>
-    </div>
+      <TasksContainer />
     </>
   )
 }

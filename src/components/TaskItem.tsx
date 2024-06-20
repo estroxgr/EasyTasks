@@ -1,13 +1,15 @@
 import { FiEdit, FiTrash2 } from "react-icons/fi";
+import { Task } from "../interfaces";
 
-export default function TaskItem(task:any) {
+
+export default function TaskItem({task}: Task) {
 
     return (
         <>
             <div className="taskitem">
                 <div className="details">
-                    <div className="name">MAke a Toast</div>
-                    <div className="priority">Urgent</div>
+                    <div className="name">{task.name}</div>
+                    <div className="priority">{task.priority}</div>
                 </div>
 
                 {/** actions */}
